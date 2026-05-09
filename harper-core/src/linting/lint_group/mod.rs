@@ -1123,14 +1123,14 @@ mod tests {
             Language::English(EnglishDialect::American),
         );
 
-        if let Some(names) = &group.clashing_linter_names {
-            if !names.is_empty() {
-                panic!(
-                    "⚠️ Found {} clashing linter names: {}",
-                    names.len(),
-                    names.join(", ")
-                );
-            }
+        if let Some(names) = &group.clashing_linter_names
+            && !names.is_empty()
+        {
+            panic!(
+                "⚠️ Found {} clashing linter names: {}",
+                names.len(),
+                names.join(", ")
+            );
         }
     }
 }
