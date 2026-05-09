@@ -61,7 +61,7 @@ mod tests {
     #[test]
     fn flag_advices_and_an_advice() {
         assert_lint_count(
-            "I asked for an advice and he gave me two advices!",
+            "I asked for an advice. He gave me two advices!",
             MassNouns::new(FstDictionary::curated(LanguageFamily::English)),
             2,
             crate::languages::LanguageFamily::English,

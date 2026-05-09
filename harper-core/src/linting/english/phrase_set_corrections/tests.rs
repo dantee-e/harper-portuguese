@@ -634,6 +634,7 @@ fn corrects_algo() {
         "Always glad when the algo feeds me a new dissident.",
         lint_group(),
         "Always glad when the algorithm feeds me a new dissident.",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -643,6 +644,7 @@ fn corrects_algos() {
         "I moved algos development to a private repository.",
         lint_group(),
         "I moved algorithms development to a private repository.",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -676,6 +678,7 @@ fn corrects_coord() {
         "Prompted by #5684, we should probably emit more meaningful messages when position guides are specified in coord systems that do not support them",
         lint_group(),
         "Prompted by #5684, we should probably emit more meaningful messages when position guides are specified in coordinate systems that do not support them",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -685,6 +688,7 @@ fn corrects_coords() {
         "Here is how you can extract the list of coords from any geometry:",
         lint_group(),
         "Here is how you can extract the list of coordinates from any geometry:",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -743,6 +747,7 @@ fn corrects_notif() {
         "Amazing to see the notif of this on my phone!",
         lint_group(),
         "Amazing to see the notification of this on my phone!",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -752,6 +757,7 @@ fn corrects_notifs() {
         "I don't encourage you spending all your time on social media or keeping the notifs on if you're working on something serious.",
         lint_group(),
         "I don't encourage you spending all your time on social media or keeping the notifications on if you're working on something serious.",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -813,6 +819,7 @@ fn corrects_vuln() {
         "I did not understand this vuln in first place now I do not understand in 2nd place as well😢",
         lint_group(),
         "I did not understand this vulnerability in first place now I do not understand in 2nd place as well😢",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -829,12 +836,14 @@ fn corrects_vulns() {
         "... when persisted, containing endpoints, vulns, WAF bypasses, sensitive params, and auth endpoints.",
         only_expand_vuln,
         "... when persisted, containing endpoints, vulnerabilities, WAF bypasses, sensitive params, and auth endpoints.",
+        crate::languages::LanguageFamily::English,
     );
     // Fix all lints in the `LintGroup`
     assert_suggestion_result(
         "... when persisted, containing endpoints, vulns, WAF bypasses, sensitive params, and auth endpoints.",
         lint_group(),
         "... when persisted, containing endpoints, vulnerabilities, WAF bypasses, sensitive parameters, and auth endpoints.",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -2844,6 +2853,7 @@ fn corrects_on_hindsight() {
         "On hindsight, the tip to \"try launching your terminal\" would've been useful",
         lint_group(),
         "In hindsight, the tip to \"try launching your terminal\" would've been useful",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -2853,6 +2863,7 @@ fn corrects_in_hind_sight_hyphenated() {
         "It probably could have been better to fake an OSS project name in hind-sight, but anyway we can still fix this.",
         lint_group(),
         "It probably could have been better to fake an OSS project name in hindsight, but anyway we can still fix this.",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -2862,6 +2873,7 @@ fn corrects_in_hind_sight() {
         "In hind sight, this is obvious, but the error message led to hours of wasted debugging in the wrong places.",
         lint_group(),
         "In hindsight, this is obvious, but the error message led to hours of wasted debugging in the wrong places.",
+        crate::languages::LanguageFamily::English,
     )
 }
 
@@ -2871,6 +2883,7 @@ fn corrects_on_hind_sight() {
         "Yes, on hind sight I've used tasks that don't respond well to kills.",
         lint_group(),
         "Yes, in hindsight I've used tasks that don't respond well to kills.",
+        crate::languages::LanguageFamily::English,
     )
 }
 
@@ -2880,6 +2893,7 @@ fn corrects_on_hind_sight_hyphenated() {
         "On hind-sight the likely root cause was not force cleaning helm config.",
         lint_group(),
         "In hindsight the likely root cause was not force cleaning helm config.",
+        crate::languages::LanguageFamily::English,
     )
 }
 
@@ -2943,6 +2957,7 @@ fn corrects_monumentous() {
         "I think that would be a monumentous step in the right direction, and would DEFINATLY turn heads in not just the music industry, but every ...",
         lint_group(),
         "I think that would be a momentous step in the right direction, and would DEFINATLY turn heads in not just the music industry, but every ...",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -2952,6 +2967,7 @@ fn corrects_monumentously() {
         "the most impressive thing out of all of this is that GitHub created such a monumentously good name",
         lint_group(),
         "the most impressive thing out of all of this is that GitHub created such a monumentally good name",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -3209,6 +3225,7 @@ fn fix_side_tangent_start_of_sentence() {
         "Side tangent: I personally wouldn't worry about using ; for removing the selection unless you need to.",
         lint_group(),
         "Tangent: I personally wouldn't worry about using ; for removing the selection unless you need to.",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -3218,6 +3235,7 @@ fn fix_side_tangent_aside() {
         "As a side tangent, in addition to not solving the gradual code repair problem",
         lint_group(),
         "As an aside, in addition to not solving the gradual code repair problem",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -3227,6 +3245,7 @@ fn fix_side_tangents() {
         "so we don't get bogged down by tiny formatting bikeshedding side tangents",
         lint_group(),
         "so we don't get bogged down by tiny formatting bikeshedding tangents",
+        crate::languages::LanguageFamily::English,
     );
 }
 

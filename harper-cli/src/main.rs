@@ -274,7 +274,7 @@ fn main() -> anyhow::Result<()> {
     }
 
     let markdown_options = MarkdownOptions::default();
-    let curated_dictionary = FstDictionary::curated();
+    let curated_dictionary = FstDictionary::curated(LanguageFamily::English);
 
     match cli.command {
         Args::Lint {
@@ -519,7 +519,11 @@ fn main() -> anyhow::Result<()> {
 
             if let Some((dict_word, dict_annot)) = &entry_in_dict {
                 println!("Old, from the dictionary:");
-                print_word_derivations(dict_word, dict_annot, &FstDictionary::curated());
+                print_word_derivations(
+                    dict_word,
+                    dict_annot,
+                    &FstDictionary::curated(LanguageFamily::English),
+                );
             };
 
             if !annot.is_empty() {

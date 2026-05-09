@@ -56,6 +56,7 @@ mod tests {
             "I don't think anyone is in favour doing nothing, but I wouldn't know which of the first two is best.",
             InFavourOfDoing::default(),
             "I don't think anyone is in favour of doing nothing, but I wouldn't know which of the first two is best.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -65,6 +66,7 @@ mod tests {
             "I've definitely been in favor getting Observable as a language primitive since the beginning.",
             InFavourOfDoing::default(),
             "I've definitely been in favor of getting Observable as a language primitive since the beginning.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -74,6 +76,7 @@ mod tests {
             "I'm in favor having all-in-one @std/std as convenient entrypoint for all modules.",
             InFavourOfDoing::default(),
             "I'm in favor of having all-in-one @std/std as convenient entrypoint for all modules.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -83,6 +86,7 @@ mod tests {
             "I'm closing this in favor using the official guide.",
             InFavourOfDoing::default(),
             "I'm closing this in favor of using the official guide.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -92,6 +96,7 @@ mod tests {
             "Would you be in favour having a feature to suppress local configuration files via an env var e.g. DISABLE_LOCAL_CONFIG or similar?",
             InFavourOfDoing::default(),
             "Would you be in favour of having a feature to suppress local configuration files via an env var e.g. DISABLE_LOCAL_CONFIG or similar?",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -101,6 +106,7 @@ mod tests {
             "I've abandoned just optimising the cpu renderers (which could then just be compiled on linux as well) in favour putting the work onto gpu.",
             InFavourOfDoing::default(),
             "I've abandoned just optimising the cpu renderers (which could then just be compiled on linux as well) in favour of putting the work onto gpu.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -110,6 +116,7 @@ mod tests {
             "This is also the reason I am personally not in favour using AI for this task because of the latter.",
             InFavourOfDoing::default(),
             "This is also the reason I am personally not in favour of using AI for this task because of the latter.",
+            crate::languages::LanguageFamily::English,
         );
     }
 }

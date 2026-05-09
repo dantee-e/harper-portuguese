@@ -343,7 +343,8 @@ mod tests {
     fn dont_correct_in_most_to_innest_3284() {
         assert_no_lints(
             "I have spent most in my life in Florida and had never heard \"display\" with an emphasis on the first syllable.",
-            MoreAdjective::new(FstDictionary::curated()),
+            MoreAdjective::new(FstDictionary::curated(LanguageFamily::English)),
+            LanguageFamily::English,
         );
     }
 
@@ -352,7 +353,8 @@ mod tests {
     fn dont_correct_more_cut_to_cuter() {
         assert_no_lints(
             "they’re more cut from “one and done” cloth",
-            MoreAdjective::new(FstDictionary::curated()),
+            MoreAdjective::new(FstDictionary::curated(LanguageFamily::English)),
+            LanguageFamily::English,
         );
     }
 }

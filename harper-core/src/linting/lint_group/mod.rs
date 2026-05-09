@@ -984,14 +984,12 @@ mod tests {
 
     #[test]
     fn worthchecking_is_split() {
-        fn worthchecking_is_split() {
-            assert_suggestion_result(
-                "It is worthchecking",
-                test_group(),
-                "It is worth checking",
-                LanguageFamily::English,
-            );
-        }
+        assert_suggestion_result(
+            "It is worthchecking",
+            test_group(),
+            "It is worth checking",
+            LanguageFamily::English,
+        );
     }
 
     #[test]

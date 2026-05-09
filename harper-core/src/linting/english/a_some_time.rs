@@ -67,6 +67,7 @@ mod tests {
             "I am connecting to a websocket and I get this error after a some time: SyntaxError: Unexpected end of JSON input",
             ASomeTime::default(),
             "I am connecting to a websocket and I get this error after some time: SyntaxError: Unexpected end of JSON input",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -76,6 +77,7 @@ mod tests {
             "I haven't upgraded my system for at least a some months.",
             ASomeTime::default(),
             "I haven't upgraded my system for at least some months.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -85,6 +87,7 @@ mod tests {
             "The problem with this code is that not receiving images for a some time causes the window to hang",
             ASomeTime::default(),
             "The problem with this code is that not receiving images for some time causes the window to hang",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -94,6 +97,7 @@ mod tests {
             "This problem have been there for a some weeks so does it plans to ve fixed.",
             ASomeTime::default(),
             "This problem have been there for some weeks so does it plans to ve fixed.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -103,6 +107,7 @@ mod tests {
             "I reported some warnings from the log a some weeks ago.",
             ASomeTime::default(),
             "I reported some warnings from the log some weeks ago.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -113,6 +118,7 @@ mod tests {
             "I guess support people is was cheaper than just a some hours of an engineer who can actually fix the platform",
             ASomeTime::default(),
             "I guess support people is was cheaper than just some hours of an engineer who can actually fix the platform",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -122,6 +128,7 @@ mod tests {
             "Spent a some time not using it, now the problem is back....",
             ASomeTime::default(),
             "Spent some time not using it, now the problem is back....",
+            crate::languages::LanguageFamily::English,
         );
     }
 }

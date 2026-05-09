@@ -388,4 +388,16 @@ mod tests {
             crate::languages::LanguageFamily::English,
         );
     }
+
+    #[test]
+    fn worthchecking_is_split() {
+        assert_suggestion_result(
+            "It is worthchecking",
+            WorthToDo::new(FstDictionary::curated(
+                crate::languages::LanguageFamily::English,
+            )),
+            "It is worth checking",
+            crate::languages::LanguageFamily::English,
+        );
+    }
 }
