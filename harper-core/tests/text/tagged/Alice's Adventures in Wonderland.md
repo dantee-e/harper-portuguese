@@ -1752,8 +1752,8 @@
 #
 > “ In        my  youth , ” Father  William replied to his     son     , “ I       feared it       might    injure
 # . NPr/J/R/P D$+ NSg+  . . NPr/VB+ NPr+    VP/J    P  ISg/D$+ NPr/VB+ . . ISg/#r+ VP/J   NPr/ISg+ Nᴹ/VXB/J VB
-> the brain      ; But     , now       that      I’m perfectly sure I       have    none   , Why    , I       do  it       again
-# D+  NPr🅪Sg/VB+ . NSg/C/P . NSg/J/R/C I/C/Ddem+ K   R         J    ISg/#r+ NSg/VXB NSg/I+ . NSg/VB . ISg/#r+ VXB NPr/ISg+ P
+> the brain      ; But     , now       that      I’m perfectly sure I       have    none , Why    , I       do  it       again
+# D+  NPr🅪Sg/VB+ . NSg/C/P . NSg/J/R/C I/C/Ddem+ K   R         J    ISg/#r+ NSg/VXB I+   . NSg/VB . ISg/#r+ VXB NPr/ISg+ P
 > and  again . ”
 # VB/C P     . .
 >
@@ -2078,8 +2078,8 @@
 #
 > “ Well       , be       off        , then      ! ” said the Pigeon  in        a    sulky  tone       , as    it       settled down        again
 # . NSg/VB/J/R . NSg/VLXB NSg/VB/J/P . NSg/J/R/C . . VP/J D   NSg/VB+ NPr/J/R/P D/P+ NSg/J+ N🅪Sg/I/VB+ . R/C/P NPr/ISg+ VP/J    N🅪Sg/VB/J/P P
-> into its     nest       . Alice crouched down        among the trees   as    well       as    she  could   , for   her
-# P    ISg/D$+ NSg/VB/JS+ . NPr+  VP/J     N🅪Sg/VB/J/P P     D+  NPl/V3+ R/C/P NSg/VB/J/R R/C/P ISg+ NSg/VXB . R/C/P ISg/D$+
+> into its     nest    . Alice crouched down        among the trees   as    well       as    she  could   , for   her
+# P    ISg/D$+ NSg/VB+ . NPr+  VP/J     N🅪Sg/VB/J/P P     D+  NPl/V3+ R/C/P NSg/VB/J/R R/C/P ISg+ NSg/VXB . R/C/P ISg/D$+
 > neck    kept getting entangled among the branches , and  every now       and  then      she  had
 # NSg/VB+ VP   NSg/Vg  VP/J      P     D   NPl/V3+  . VB/C Dq    NSg/J/R/C VB/C NSg/J/R/C ISg+ VP
 > to stop   and  untwist it       . After a    while       she  remembered that     she  still      held the
@@ -3370,8 +3370,8 @@
 # . NSg/I+ R/C/P . . VP/J D+  NSg/I/J+ NPr/I+ VP  VPp/J  NSg/J .
 >
 #
-> “ That’s none  of your business , Two ! ” said Seven .
-# . K      NSg/I P  D$+  N🅪Sg/J+  . NSg . . VP/J NSg   .
+> “ That’s none of your business , Two ! ” said Seven .
+# . K      I    P  D$+  N🅪Sg/J+  . NSg . . VP/J NSg   .
 >
 #
 > “ Yes    , it       is  his     business ! ” said Five , “ and  I’ll tell   him  — it       was  for   bringing the
@@ -5196,8 +5196,8 @@
 # NSg        P  D   NSg+ .
 >
 #
-> “ I       keep   them     to sell   , ” the Hatter added as    an  explanation ; “ I’ve none  of my  own      .
-# . ISg/#r+ NSg/VB NSg/IPl+ P  NSg/VB . . D   NSg/VB VP/J  R/C/P D/P N🅪Sg+       . . K    NSg/I P  D$+ NSg/VB/J .
+> “ I       keep   them     to sell   , ” the Hatter added as    an  explanation ; “ I’ve none of my  own      .
+# . ISg/#r+ NSg/VB NSg/IPl+ P  NSg/VB . . D   NSg/VB VP/J  R/C/P D/P N🅪Sg+       . . K    I    P  D$+ NSg/VB/J .
 > I’m a   hatter . ”
 # K   D/P NSg/VB . .
 >
@@ -5790,8 +5790,8 @@
 #
 > The jury      all          wrote down        on  their slates , “ She  doesn’t believe there’s an  atom of
 # D+  NSg/VB/J+ NSg/I/J/C/Dq VPt   N🅪Sg/VB/J/P J/P D$+   NPl/V3 . . ISg+ VX3     VB      K       D/P NSg  P
-> meaning    in        it       , ” but     none  of them     attempted to explain the paper      .
-# N🅪Sg/Vg/J+ NPr/J/R/P NPr/ISg+ . . NSg/C/P NSg/I P  NSg/IPl+ VP/J      P  VB      D   N🅪Sg/VB/J+ .
+> meaning    in        it       , ” but     none of them     attempted to explain the paper      .
+# N🅪Sg/Vg/J+ NPr/J/R/P NPr/ISg+ . . NSg/C/P I    P  NSg/IPl+ VP/J      P  VB      D   N🅪Sg/VB/J+ .
 >
 #
 > “ If    there’s no       meaning    in        it       , ” said the King      , “ that      saves  a   world  of trouble  ,

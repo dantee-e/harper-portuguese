@@ -1,4 +1,4 @@
-54600
+54700
 
 # Start of original dictionary import
 # combined with dialect spelling dictionary import.
@@ -664,6 +664,7 @@ Aron/Og
 Arrhenius/Og
 Arron/Og
 Art/Og
+Art Deco/Omg
 Artaxerxes/Og
 Artemis/Og
 Arthur/ONg
@@ -1662,10 +1663,10 @@ CD-ROM/NgS
 CDC/ON
 CDMX/Og             # Mexico City, see also DF
 CDT/N
-CEO/NgS             # chief executive officer
+CEO/NOgS            # chief executive officer
 CF/NOJ
 CFC/ONg
-CFO/NO              # financial officer
+CFO/NOgS            # chief financial officer
 CGI/NOV             # computer graphics interface; common gateway interface
 CIA/ONgJ            # agency
 CID/NO
@@ -1683,6 +1684,7 @@ COD/ON
 COFF/ONg            # common object file format
 COL/ON
 COLA/NO
+COO/NOgS            # chief operating officer
 COVID/N             # virus
 CO₂/N
 CPA/Ng
@@ -1695,6 +1697,7 @@ CSS/NOg
 CST/ONg
 CSV/Ng              # data file format
 CT/ONgVJ            # US state (Connecticut)
+CTO/NOgS            # chief technology officer
 CUDA/ONg            # computing architecture
 CV/NOSJ             # curriculum vitae
 CVS/NOg             # version control
@@ -2496,6 +2499,7 @@ Crosby/Og
 Cross/Og
 Crow/NOSg
 Crowley/Og
+Croydon/Og
 Crucifixion/OgS
 Cruikshank/Og
 Cruise/Og
@@ -2579,6 +2583,7 @@ DMD/Ng
 DMV/Ng
 DMZ/N               # demilitarized zone
 DNA/NOgV
+DNC/Og              # Democratic National Committee
 DOA/J               # dead on arrival
 DOB/NO
 DOD/N
@@ -3425,7 +3430,7 @@ FCC/ONJ
 FD/N
 FDA/O
 FDIC/Og
-FDR/ONg
+FDR/ONg             # Franklin Delano Roosevelt
 FEMA/Og
 FFT/NgS             # fast Fourier transform
 FHA/Og
@@ -4246,6 +4251,7 @@ HIMARS/N
 HIV/Ng
 HM/NO
 HMO/Ng
+HMRC/Og!
 HMS/N
 HOV/N
 HP/ONg
@@ -5181,6 +5187,7 @@ Jilin/Og
 Jill/ONg
 Jillian/Og
 Jim/Og
+Jim Crow/Omg
 Jimenez/Og
 Jimmie/Og
 Jimmy/ONg
@@ -5313,6 +5320,7 @@ Justinian/OgJ
 Jutland/Og
 Juvenal/Og
 K/                  # Potassium
+K-pop/Nmg
 KB/NOg              # kilobyte, cf. Kb
 KC/ON
 KFC/Og              # company
@@ -7245,6 +7253,7 @@ NFL/ONg             # sports organization
 NGO/NgS             # non-government organization
 NH/ONVJ             # US state (New Hampshire)
 NHL/NOg             # sports organization
+NHS/Og
 NIH/OJ              # National Institutes of Health
 NIMBY/NJ            # not in my backyard
 NJ/OJ               # US state (New Jersey)
@@ -7426,6 +7435,7 @@ Newport/Og
 Newsweek/g
 Newton/Og
 Newtonian/JNg
+New Zealand/Og
 Nexis/g
 Ngaliema/g
 Nguyen/Og
@@ -7589,7 +7599,7 @@ OCR/ONV             # optical character recognition
 OD/NSgV
 OE/ONJV
 OECD/Og             # organization
-OED/O               # dictionary
+OED/Og              # dictionary
 OEM/JNgS            # original equipment manufacturer
 OH/ON               # US state (Ohio)
 OHSA/g              # law
@@ -8783,7 +8793,8 @@ Roku/g
 Rolaids/g
 Roland/Og
 Rolando/g
-Rolex/Ng
+Rolex/OgS
+Rolf/Og
 Rolland/Og
 Rollerblade/g
 Rollins/Og
@@ -11034,6 +11045,7 @@ Xerxes/Og
 Xhosa/Ng
 Xi'an/Og
 Xian/ONSgJ
+Xiamen/Og           # city in china
 Xiaomi/Og
 Xiaoping/g
 Ximenes/g
@@ -11136,6 +11148,7 @@ Yvette/ONg
 Yvonne/Og
 Z/NSg^nX
 Z80/NOSg
+Zach/Og
 Zachariah/Og
 Zachary/Og
 Zachery/Og
@@ -11226,6 +11239,7 @@ Zyuganov/g
 Zzz
 a/~DP(
 a lot
+a.k.a./
 a.m./
 aah/NV
 aardvark/~NSg
@@ -12138,6 +12152,7 @@ algae/~N9S
 algal/~JN
 algebra/~NwSg
 algebraic/~JQ
+algo/NgS†
 algorithm/~NSg
 algorithmic/JQ
 alias/~NgSVGd
@@ -15640,6 +15655,7 @@ bramble/NgSV
 brambly/J
 bran/~Ng
 branch/~NgSVGd
+branchless/J
 branchlike/J
 brand/~NgSVGd>Zr
 branded/~JVtTU
@@ -15931,6 +15947,7 @@ bu/~N
 bub/NSgV
 bubble/~NSgVdG>
 bubble tea/NwgS
+bubble wrap/Nmg
 bubblegum/~NmgJ
 bubbly/J>^Nmg
 bubo/N0g
@@ -18266,6 +18283,8 @@ cohesive/~JYpN
 cohesiveness/Ng
 coho/NgS
 cohort/~NSgV
+cohost/NgSVdG
+co-host/NgS
 coif/NgSV
 coiffed/VtT
 coiffing/V6
@@ -18467,7 +18486,7 @@ combustible/~JNgS
 combustion/~Nmg
 come/~VbTG>SNgPiZ
 come back/V/
-comeback/~NgSV
+comeback/~NgS
 comedian/~NgS
 comedic/~J
 comedienne/NgS
@@ -19827,6 +19846,8 @@ crappy/J
 craps/NgVh
 crapshooter/NgS
 crash/~NgSJVdG
+crash out/V/
+crashout/NgS
 crass/J>Y^p
 crassness/Ng
 crate/~NSgVd>GZ
@@ -20326,7 +20347,7 @@ customizability/Nmg
 customizable/J
 customization/~NwgS
 customize/VdSG
-cut/~VbtT>SJ^Ng
+cut/~VbtT>SJNg
 cut back/V/
 cut off/V/
 cut over/V/
@@ -20334,7 +20355,7 @@ cut scene/NgS
 cutaneous/~J
 cutaway/JNgS
 cutback/NgS
-cute/~JYp
+cute/~JYp>^
 cuteness/~Nmg
 cutesy/J^>
 cutey/NS
@@ -20515,6 +20536,7 @@ darken/~VGd>Z
 darkener/Ng
 darkie/NS
 darkness/~Nmg
+darknet/NgS
 darkroom/NgS
 darling/~NgSJ
 darn/~J>VGdSNgZ
@@ -21234,6 +21256,7 @@ destine/VdSG
 destiny/~NwSg
 destitute/~JVn
 destitution/Nmg
+de-stress/VdSG
 destroy/~VSGd>Z
 destroyer/~NgS
 destruct/~VGdSvg
@@ -21723,6 +21746,7 @@ discussion/~NwSg
 disdain/~NmSgVdG
 disdainful/JY
 disease/NwSg
+diseased/J
 disembowel/VSdGL
 disembowelled/VtT!@_₹
 disembowelling/V6N!@_₹
@@ -24387,9 +24411,11 @@ eyestrain/Ng
 eyeteeth/N9
 eyetooth/N0g
 eyewash/NgV
+eyewatering/J       # main: Longman, OED; also: Cambridge
+eye-watering/JY     # main: Cambridge, Collins, Oxford Learner's
 eyewear/Nmg
 eyewitness/~NgSV
-#f/~N^>eirv          # N:noun ^:fest >:fer e:def i:inf r:ref v:five
+#f/~N^>eirv         # N:noun ^:fest >:fer e:def i:inf r:ref v:five
 fMRI/N
 fa/~NgP
 fab/~JNgSV
@@ -24992,6 +25018,7 @@ film/~NwgSVdG
 filminess/NgM
 filmmaker/~NSg
 filmmaking/NgM
+filmography/NwgS
 filmstrip/NgS
 filmy/J^>p
 filo/N
@@ -25351,6 +25378,8 @@ flipper/NgSJc
 flippest/Ju
 flipping/~V6JN
 flippy/JNS
+flipside/NgS        # main spelling in several dictionaries
+flip-side/NgS       # 'also' spelling in several dictionaries
 flirt/NSgVGdJ
 flirtation/NgS
 flirtatious/JYp
@@ -27982,6 +28011,7 @@ harbour/NgSVGd!@_₹
 harbourmaster/NS!@_₹
 hard/~J>Y^pNwRynX   # removed `V` verb sense is obsolete
 hard code/VSdG
+hard copy/NsG
 hard-pressed/J
 hard right/Ng
 hard-right/J
@@ -28130,6 +28160,7 @@ hawkishness/Nmg
 hawser/NSg
 hawthorn/~NwgS
 hay/~NmSgVGd
+hay fever/Nmg
 haycock/NSg
 hayloft/NSg
 haymaker/NS
@@ -28790,6 +28821,9 @@ homely/J>^p
 homemade/~J
 homemaker/NSg
 homemaking/Nmg
+homeomorphic/J
+homeomorphism/
+homeomorphous/J
 homeopath/N0g
 homeopathic/JN
 homeopaths/N9
@@ -29874,7 +29908,7 @@ impure/~JY^>V
 impurity/~NSg
 imputation/NSg
 impute/VdSGB
-in/~PJR(rg          # removed `4`, verb senses are obsolete, `NS`, noun sense is marginal
+in/~PJR(g           # removed `4`, verb senses are obsolete, `NS`, noun sense is marginal
 in addition         # dictionaries don't list this with a POS, or use 'phrase'
 in addition to/P
 in-depth/J
@@ -30323,10 +30357,11 @@ inland/~JNg
 inline/~JVdGSNg
 inmate/~NSg
 inmost/JN
-inn/~NSgVG>z
+inn/~NSgVG
 innards/Ng
 innate/~JYpV
 innateness/Ng
+inner/JNgS
 innermost/~JN
 innersole/NSg
 innerspring/J
@@ -31233,7 +31268,8 @@ jointly/~RyW
 joist/NSgV
 jojoba/~N
 joke/~NgSVGd>Z
-joker/~Ng
+joker/~NgS
+jokestar/NgS
 jokey/J
 jokier/Jc
 jokiest/Ju
@@ -32595,6 +32631,7 @@ lisper/Ng
 lissom/J!_₹
 lissome/J
 list/~NgSVdGnzX
+list box/NgS
 listed/~VJU
 listeme/NgS
 listen/~Vd>GNgBZ
@@ -32650,6 +32687,7 @@ livability/Nmg
 livable/JU
 live/~VGdSJ^rB
 live action/Nmg
+liveability/Nmg
 liveable/J!_₹
 livelihood/~NSg
 liveliness/Nmg
@@ -33909,6 +33947,7 @@ megametre/NS!@_₹
 megapascal/NS
 megaphone/NSgVdG
 megapixel/~NSgJ
+megaproject/NSg
 megastar/NS
 megaton/NSg
 megawatt/NgS
@@ -35543,7 +35582,7 @@ mythology/~NwSg
 mythos/Nmg
 myths/~N9
 myxomatosis/Nmg
-n/NJ^CiKH
+n/NJCH # i was in-; K was pro-; ^ was -est; C is conj
 naan/NwS
 nab/VSN
 nabbed/VtT
@@ -36230,7 +36269,7 @@ nondiscriminatory/J
 nondramatic/J
 nondrinker/NgS
 nondrying/J
-none/~IN
+none/~I             # remove `/N` since noun sense is rare/marginal
 noneducational/J
 noneffective/JN
 nonelastic/J
@@ -37585,6 +37624,7 @@ overcritical/J
 overcrowd/VSdG
 overcrowding/~VNg
 overdecorate/VdSG
+overdependence/Nmg
 overdependent/J
 overdevelop/VSdG
 overdid/V
@@ -39108,6 +39148,8 @@ philtre/NgSV!@_₹
 phish/~VGd>NZ
 phisher/Ng
 phlebitis/Nmg
+phlebotomy/NgS
+phlebotomist/NgS
 phlegm/Nmg
 phlegmatic/JNQ
 phloem/Nmg
@@ -39691,6 +39733,7 @@ pluckiness/Ng
 plucky/J>^p
 plug/~NSVU
 plug in/V/
+plug-in/JNgS
 plug's
 pluggable/J
 plugged/~VtTU
@@ -40836,6 +40879,7 @@ promptness/Nmg
 promulgate/VGdSn
 promulgation/~Nmg
 promulgator/NgS
+pron/N              # previously generated by N/K
 pronatalist/NgSJ
 prone/~JpV
 proneness/Nmg
@@ -41904,6 +41948,8 @@ rcpt/N
 rd/~N
 re/PNSg(vz
 re-enable/VdSG
+re-enslave/VdSG
+re-enslavement/Nmg
 reach/~VdGSNgB
 reachable/~JNU
 reacquire/VdSG
@@ -42084,7 +42130,7 @@ recorder/~NgS
 recording/~V6NwgS
 recordkeeping/Ng
 recoup/VdG
-recourse/~NgV
+recourse/~NgS
 recoverability/Nmg
 recoverable/JNU
 recovery/~NwSg
@@ -42344,7 +42390,7 @@ reimagined/VtTJ
 reimburse/VdSGBL
 reimbursement/NgS
 reimplementation/NmgS
-rein/~NVGd
+rein/~NgSVGd
 reindeer/~NgV
 reinforce/~VGdSL
 reinforcement/~NSg
@@ -43179,7 +43225,7 @@ roll/~Vd>GSNgZzr
 roll back/V/
 roll out/V/
 roll over/V/
-rollback/~NSgV
+rollback/~NSg
 roller/~NgV
 rollerblading/NmV6
 rollercoaster/NgS   # AHD, Cambridge, OED
@@ -43852,6 +43898,7 @@ scale/~NwSVGde
 scale's
 scaleless/J
 scalene/JN
+scaler/NgS
 scaliness/Ng
 scallion/NgS
 scallop/NSgVGd
@@ -44976,6 +45023,9 @@ shithead/NSx
 shitless/Jx
 shitload/NSx
 shitpost/NgSdGx
+shit show/NgS       # main entry in: MW
+shitshow/NgS        # 'also' in: MW
+shit-show/NgS       # 'also' in: MW
 shitted/VtTx
 shitting/NV6Jx
 shitty/J>^x
@@ -45110,7 +45160,7 @@ showtime/~Nmg
 showy/~J^>p
 shpt/N
 shrank/~VN
-shrapnel/~Ng
+shrapnel/~Nmg
 shred/NgSVJ
 shredded/~VtTJ
 shredder/NgS
@@ -45128,6 +45178,9 @@ shrilly/JRy
 shrimp/~NwgS09Vd>GZ # singular and plural, also has a plural in -s
 shrine/~NgSV
 shrink/~VGSNgB
+shrink-wrap/VSNg
+shrink-wrapped/VtTJ
+shrink-wrapping/V6
 shrinkage/Nmg
 shrinker/NgS
 shrinkflation/Nmg
@@ -45393,6 +45446,7 @@ sinuosity/Ng
 sinuous/JY
 sinus/~NgS
 sinusitis/Ng
+sinusoid/NSg
 sinusoidal/~JN
 sip/~NSgV
 siphon/~NgSVGd
@@ -49374,6 +49428,7 @@ thwack/VGd>SNgZ
 thwacker/Ng
 thwart/~JPVGdSNg
 thy/~D
+thylacine/NgS
 thyme/~Ng
 thymine/Ng
 thymus/NgS
@@ -51237,6 +51292,7 @@ unpersuasive/J
 unpick/VGdS
 unpin/VS
 unpleasing/J
+unpledged/J
 unpolitical/J
 unpolymerised/J!_₹
 unpolymerized/J
@@ -53803,11 +53859,11 @@ Brembo/OgS          # brake company
 Btrfs/Ng            # file system
 BurpSuite/ONSg
 C++/OgS             # programming language
+CAN bus/NSg         # communication protocol
 CAPTCHA/NgS
 CCP/OS              # Chinese Communist Party
 CDMA/NSg
 CDN/NSg             # content delivery network
-CEO/NSg             # chief executive officer
 CERN/Og             # intergovernmental organization
 CI/NSg              # continuous integration
 CISC/Ng             # cpu architecture
@@ -53877,6 +53933,7 @@ DuckDuckGo/Og       # search engine
 Duolingo/Og         # language app
 EBITDA/N            # earnings before interest, taxes, depreciation, and amortization
 ECMA/Og             # European Computer Manufacturers Association
+ECU/NgS             # engine/electronic control unit
 EEA/O               # European Economic Area
 EFI/Og              # Extensible Firmware Interface
 EGR/                # exhaust gas recirculation
@@ -53914,6 +53971,7 @@ Famicom/NOSg        # game console
 Figma/Og
 FireWire/Sg         # trademark
 Firestore/Og
+Flatpak/Og          # package management
 Foddy/Sg
 Forgejo/Og          # programming forge / git host
 Frankl/Sg
@@ -53984,6 +54042,7 @@ IPv4/OgS
 IPv6/OgS
 ISA/NOSg            # instruction set architecture; industry standard architecture
 ISSN/NgS            # International Standard Serial Number
+ImageMagick/Og
 Indo-Aryan/OmgSJ    # linguistics
 Indo-European/OmSgJ # linguistics
 Indo-Iranian/NmgJ   # linguistics
@@ -53991,6 +54050,7 @@ IntelliJ/Sg
 IntelliSense/Og
 IoT/Ng              # internet of things
 Itanium/OgS         # cpu
+J-pop/Nmg
 JNI/Og              # Java Native Interface
 JS/Ng               # JavaScript
 JSDoc/Sg
@@ -54203,6 +54263,7 @@ SMSes/N9Vh
 SMSing/V6
 SMTP                # Simple Mail Transfer Protocol
 SNL/Og              # Saturday Night Live
+SPARC/OgS
 SQLAlchemy/N
 SSID/NgS
 SSL/Og              # Secure Sockets Layer
@@ -54248,6 +54309,7 @@ Tauri/Og            # web-tech framework for desktop apps
 TeX/Og              # Typesetting engine; must come after Tex!
 TeXes
 TechCrunch/g
+TempleOS/Og
 Temu/Og
 Tencent/Og
 TensorFlow/Og
@@ -54413,6 +54475,7 @@ iPadOS/Og
 iTerm2/Og           # macOS terminal emulator
 idiolect/NSg        # linguistics
 iframe/NgS
+infobox/NgS         # mainly used on wikis, not in dictionaries
 infosec/NmG         # information security
 inpaint/VGdS
 interop/NmgS        # interoperability - see also FFI
@@ -54444,6 +54507,7 @@ nullish/J
 olds/~              # common in phrasing such as "twenty year olds"
 optional/NgS        # a polymorphic type also called "option" and "maybe"
 pandoc/Sg           # !! please check and comment !! elsewhere we have Pandoc
+pastable/J
 pastebin/NgS
 paywall/VSdG        # unlike the noun sense, the verb sense has not made it to dictionaries
 pdfTeX/Og           # Program, extension for TeX engine
@@ -54471,6 +54535,7 @@ royale/~NSgJ        # !! please check and comment !! dictionaries only list noun
 runahead/NgS
 s.t./~              # !! please check and comment !!
 sRGB/Og             # colour space
+sanewashing/Nmg
 scatterplot/NSgVG   # dictionaries prefer: scatter plot
 screencast/VdSG
 scrollbar/NSg       # dictionaries prefer: scroll bar
@@ -54492,6 +54557,7 @@ subkey/NgS
 subreddit/NgS       # see Reddit
 supersequence/NgS
 synchronic/JQ       # linguistics
+systemd/Og          # Linux software
 tagset/NgS
 terraform/VGdS
 timespan/NgS
@@ -54510,6 +54576,7 @@ watchOS/Og
 webpack/Og
 whitespace/~NSg     # dictionaries prefer: white space
 wikilink/~NSg       # !! please check and comment !! elsewhere we have Wikilink
+xkcd/Og
 z-buffer/NgS
 
 # New entries may be added below this line
@@ -54533,8 +54600,14 @@ fae/Nmg             # fantasy alternative for "fey"
 iaido/Nmg           # martial art
 kalimba/NSg
 licensor/NSg
+live stream/NSgVdG  # main: Cambridge (n only), Merriam-Webster, Oxford Learner's (n only)
+live-stream/NSgVdG  # main: Oxford Learner's (v only); also: Cambridge (n only), Merriam-Webster
+livestream/NSgVdG   # main: Cambridge (v only), Collins, OED; also: Cambridge (n only), Merriam-Webster
+livestreamer/NSg    # main: OED, Oxford Learner's; also: Cambridge
+live streamer/NSg   # Cambridge
 menarche/Nmg        # medicine
 micronutrient/NSg
+misprediction/NSg.  # not in dictionaries
 monolatrous/J
 monolatry/Nmg
 offeror/NSg
@@ -54553,7 +54626,7 @@ trimetre/NgS!@_₹    # poetry
 trimetric/J
 unminted/J
 vicomital/J         # Adjective version of "viscount/viscountess"
-vicontiel/J         #  As above, alternative version
+vicontiel/J         # As above, alternative version
 viscomital/J        # As above, alternative version
 WordCamp/Og
 worldbuild/V>G

@@ -262,8 +262,12 @@ use super::{HtmlDescriptionLinter, Linter};
 use crate::EnglishDialect;
 use crate::PortugueseDialect;
 use crate::languages::Language;
+use crate::linting::english::a_some_time::ASomeTime;
+use crate::linting::english::call_them::CallThem;
 use crate::linting::english::dashes::Dashes;
+use crate::linting::english::in_favour_of_doing::InFavourOfDoing;
 use crate::linting::english::open_compounds::OpenCompounds;
+use crate::linting::english::there_is_agreement::ThereIsAgreement;
 use crate::linting::english::web_scraping::WebScraping;
 use crate::linting::english::{
     be_adjective_confusions, closed_compounds, initialisms, phrase_set_corrections, weir_rules,
@@ -522,6 +526,7 @@ impl LintGroup {
         // Please maintain alphabetical order.
         // On *nix you can maintain sort order with `sort -t'(' -k2`
         insert_expr_rule!(APart, true);
+        insert_expr_rule!(ASomeTime, true);
         insert_expr_rule!(AWhile, true);
         insert_expr_rule!(Addicting, true);
         insert_expr_rule!(AdjectiveDoubleDegree, true);
@@ -548,6 +553,7 @@ impl LintGroup {
         insert_expr_rule!(Bought, true);
         insert_expr_rule!(BrandBrandish, true);
         insert_expr_rule!(ByAccident, true);
+        insert_expr_rule!(CallThem, true);
         insert_expr_rule!(Cant, true);
         insert_struct_rule!(CapitalizePersonalPronouns, true);
         insert_expr_rule!(CautionaryTale, true);
@@ -576,7 +582,6 @@ impl LintGroup {
         insert_expr_rule!(DoubleClick, true);
         insert_expr_rule!(DoubleModal, true);
         insert_struct_rule!(EllipsisLength, true);
-        insert_struct_rule!(UseEllipsisCharacter, true);
         insert_expr_rule!(ElsePossessive, true);
         insert_expr_rule!(EverEvery, true);
         insert_expr_rule!(Everyday, true);
@@ -610,6 +615,7 @@ impl LintGroup {
         insert_expr_rule!(HyphenateNumberDay, true);
         insert_expr_rule!(IAmAgreement, true);
         insert_expr_rule!(IfWouldve, true);
+        insert_expr_rule!(InFavourOfDoing, true);
         insert_struct_rule_with_dialect!(InOnTheCards, true);
         insert_expr_rule!(InTimeFromNow, true);
         insert_struct_rule_with_dict!(InflectedVerbAfterTo, true);
@@ -740,6 +746,7 @@ impl LintGroup {
         insert_expr_rule!(TryOnesLuck, true);
         insert_struct_rule!(UnclosedQuotes, true);
         insert_expr_rule!(UpdatePlaceNames, true);
+        insert_struct_rule!(UseEllipsisCharacter, true);
         insert_struct_rule_with_dict!(UseTitleCase, true);
         insert_expr_rule!(VerbToAdjective, true);
         insert_expr_rule!(VeryUnique, true);
@@ -788,6 +795,13 @@ impl LintGroup {
         // Uses Dictionary and Dialect
         out.add("SpellCheck", SpellCheck::new(dictionary.clone(), dialect));
         out.config.set_rule_enabled("SpellCheck", true);
+
+        // Uses Dictionary, and Sentence rather than Chunk
+        out.add(
+            "ThereIsAgreement",
+            ThereIsAgreement::new(dictionary.clone()),
+        );
+        out.config.set_rule_enabled("ThereIsAgreement", true);
 
         // Uses Sentence rather than Chunk
         out.add("WebScraping", WebScraping::default());
@@ -970,12 +984,14 @@ mod tests {
 
     #[test]
     fn worthchecking_is_split() {
-        assert_suggestion_result(
-            "It is worthchecking",
-            test_group(),
-            "It is worth checking",
-            LanguageFamily::English,
-        );
+        fn worthchecking_is_split() {
+            assert_suggestion_result(
+                "It is worthchecking",
+                test_group(),
+                "It is worth checking",
+                LanguageFamily::English,
+            );
+        }
     }
 
     #[test]
