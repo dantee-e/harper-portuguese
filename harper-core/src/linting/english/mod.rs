@@ -124,6 +124,7 @@ pub(super) mod looking_forward_to;
 pub(super) mod map_phrase_linter;
 pub(super) mod map_phrase_set_linter;
 pub(super) mod mass_nouns;
+pub(super) mod mass_plurals;
 pub(super) mod means_a_lot_to;
 pub(super) mod merge_linters;
 pub(super) mod merge_words;

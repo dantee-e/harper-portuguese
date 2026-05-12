@@ -164,6 +164,7 @@ mod tests {
                 crate::languages::LanguageFamily::English,
             )),
             1,
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -175,6 +176,7 @@ mod tests {
                 crate::languages::LanguageFamily::English,
             )),
             2,
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -186,6 +188,7 @@ mod tests {
                 crate::languages::LanguageFamily::English,
             )),
             1,
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -197,6 +200,7 @@ mod tests {
                 crate::languages::LanguageFamily::English,
             )),
             1,
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -208,6 +212,7 @@ mod tests {
                 crate::languages::LanguageFamily::English,
             )),
             1,
+            crate::languages::LanguageFamily::English,
         );
     }
 
