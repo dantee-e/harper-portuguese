@@ -9,3 +9,4 @@ mariadb_data
 
 # Ignore direnv files
 .direnv/*
+harper-core/ssrs.txt
