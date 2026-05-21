@@ -883,6 +883,11 @@ mod tests {
 
     #[test]
     fn americans_dont_say_nought() {
-        assert_suggestion_result("nought", Regionalisms::new(Dialect::American), "zero");
+        assert_suggestion_result(
+            "nought",
+            Regionalisms::new(EnglishDialect::American),
+            "zero",
+            crate::languages::LanguageFamily::English,
+        );
     }
 }

@@ -136,7 +136,12 @@ mod tests {
 
     #[test]
     fn fix_at_end() {
-        assert_suggestion_result("It is addicting", Addicting::default(), "It is addictive");
+        assert_suggestion_result(
+            "It is addicting",
+            Addicting::default(),
+            "It is addictive",
+            crate::languages::LanguageFamily::English,
+        );
     }
 
     #[test]
@@ -145,6 +150,7 @@ mod tests {
             "An addicting, side-scrolling, bouncing platform game - mzmousa/fruit-catcher.",
             Addicting::default(),
             "An addictive, side-scrolling, bouncing platform game - mzmousa/fruit-catcher.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -154,6 +160,7 @@ mod tests {
             "Name of the Game is \"Pappu Pakia\". It is super fun and addicting!",
             Addicting::default(),
             "Name of the Game is \"Pappu Pakia\". It is super fun and addictive!",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -163,6 +170,7 @@ mod tests {
             "This game is kind of addicting. The fast pace and small initial tail size puts emphasis on control and reaction time.",
             Addicting::default(),
             "This game is kind of addictive. The fast pace and small initial tail size puts emphasis on control and reaction time.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -172,6 +180,7 @@ mod tests {
             "Powerful emotionally, Extremely addicting; Best game played in a long time, lost hours of time playing game without realizing",
             Addicting::default(),
             "Powerful emotionally, Extremely addictive; Best game played in a long time, lost hours of time playing game without realizing",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -181,56 +190,7 @@ mod tests {
             "Extremely addicting; Best game played in a long time",
             Addicting::default(),
             "Extremely addictive; Best game played in a long time",
-        );
-    }
-
-    #[test]
-    fn fix_at_end() {
-        assert_suggestion_result("It is addicting", Addicting::default(), "It is addictive");
-    }
-
-    #[test]
-    fn fix_before_comma() {
-        assert_suggestion_result(
-            "An addicting, side-scrolling, bouncing platform game - mzmousa/fruit-catcher.",
-            Addicting::default(),
-            "An addictive, side-scrolling, bouncing platform game - mzmousa/fruit-catcher.",
-        );
-    }
-
-    #[test]
-    fn fix_at_end_with_bang() {
-        assert_suggestion_result(
-            "Name of the Game is \"Pappu Pakia\". It is super fun and addicting!",
-            Addicting::default(),
-            "Name of the Game is \"Pappu Pakia\". It is super fun and addictive!",
-        );
-    }
-
-    #[test]
-    fn fix_at_end_with_period() {
-        assert_suggestion_result(
-            "This game is kind of addicting. The fast pace and small initial tail size puts emphasis on control and reaction time.",
-            Addicting::default(),
-            "This game is kind of addictive. The fast pace and small initial tail size puts emphasis on control and reaction time.",
-        );
-    }
-
-    #[test]
-    fn fix_at_end_with_semicolon() {
-        assert_suggestion_result(
-            "Powerful emotionally, Extremely addicting; Best game played in a long time, lost hours of time playing game without realizing",
-            Addicting::default(),
-            "Powerful emotionally, Extremely addictive; Best game played in a long time, lost hours of time playing game without realizing",
-        );
-    }
-
-    #[test]
-    fn fix_at_end_with_semicolon_no_commas_due_to_chunk_mode() {
-        assert_suggestion_result(
-            "Extremely addicting; Best game played in a long time",
-            Addicting::default(),
-            "Extremely addictive; Best game played in a long time",
+            crate::languages::LanguageFamily::English,
         );
     }
 }

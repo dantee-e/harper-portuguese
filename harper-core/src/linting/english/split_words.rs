@@ -5,8 +5,8 @@ use hashbrown::HashSet;
 use crate::expr::Expr;
 use crate::linting::{
     ExprLinter, LintKind, Suggestion,
+    english::informal_laughter::is_informal_laughter,
     expr_linter::{Chunk, at_start_of_sentence, preceded_by_word},
-    informal_laughter::is_informal_laughter,
 };
 use crate::spell::{Dictionary, FstDictionary, TrieDictionary};
 use crate::{Lint, Token};
@@ -397,9 +397,23 @@ mod tests {
     }
 
     #[test]
+    fn worthchecking_is_split_local() {
+        assert_suggestion_result(
+            "It is worthchecking",
+            SplitWords::default(),
+            "It is worth checking",
+            crate::languages::LanguageFamily::English,
+        );
+    }
+
+    #[test]
     fn allows_informal_laughter() {
         for source in ["hah", "haha", "hahah", "hahaha", "Hahahah"] {
-            assert_no_lints(source, SplitWords::default());
+            assert_no_lints(
+                source,
+                SplitWords::default(),
+                crate::languages::LanguageFamily::English,
+            );
         }
     }
 }

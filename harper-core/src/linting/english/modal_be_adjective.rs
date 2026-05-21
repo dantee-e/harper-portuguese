@@ -179,6 +179,7 @@ mod tests {
         assert_no_lints(
             "I can't way for something better to be released.",
             ModalBeAdjective::default(),
+            crate::languages::LanguageFamily::English,
         );
     }
 }

@@ -1,7 +1,7 @@
 use super::{Lint, LintKind, Linter, Suggestion};
 use crate::TokenStringExt;
 use crate::char_string::char_string;
-use crate::linting::informal_laughter::is_informal_laughter;
+use crate::linting::english::informal_laughter::is_informal_laughter;
 use crate::{CharString, CharStringExt, Document, Span};
 
 #[derive(Debug, Clone)]
@@ -209,7 +209,12 @@ mod tests {
     #[test]
     fn dont_flag_repeated_laughter() {
         for source in ["ha ha", "Ha ha", "hah hah", "ha ha ha"] {
-            assert_lint_count(source, RepeatedWords::default(), 0);
+            assert_lint_count(
+                source,
+                RepeatedWords::default(),
+                0,
+                crate::languages::LanguageFamily::English,
+            );
         }
     }
 }

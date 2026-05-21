@@ -166,6 +166,7 @@ mod tests {
             "This isn't necessary.",
             AvoidContractions::default(),
             "This is not necessary.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -175,6 +176,7 @@ mod tests {
             "It wasn't ready.",
             AvoidContractions::default(),
             "It was not ready.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -184,6 +186,7 @@ mod tests {
             "They aren't coming.",
             AvoidContractions::default(),
             "They are not coming.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -193,6 +196,7 @@ mod tests {
             "We don't need it.",
             AvoidContractions::default(),
             "We do not need it.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -202,6 +206,7 @@ mod tests {
             "She doesn't agree.",
             AvoidContractions::default(),
             "She does not agree.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -211,6 +216,7 @@ mod tests {
             "He didn't answer.",
             AvoidContractions::default(),
             "He did not answer.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -220,6 +226,7 @@ mod tests {
             "You can't go.",
             AvoidContractions::default(),
             "You cannot go.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -229,6 +236,7 @@ mod tests {
             "They won't stop.",
             AvoidContractions::default(),
             "They will not stop.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -238,12 +246,18 @@ mod tests {
             "I haven't finished.",
             AvoidContractions::default(),
             "I have not finished.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
     #[test]
     fn expands_im() {
-        assert_suggestion_result("I'm ready.", AvoidContractions::default(), "I am ready.");
+        assert_suggestion_result(
+            "I'm ready.",
+            AvoidContractions::default(),
+            "I am ready.",
+            crate::languages::LanguageFamily::English,
+        );
     }
 
     #[test]
@@ -252,6 +266,7 @@ mod tests {
             "You're right.",
             AvoidContractions::default(),
             "You are right.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -261,6 +276,7 @@ mod tests {
             "They'll arrive soon.",
             AvoidContractions::default(),
             "They will arrive soon.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -270,51 +286,61 @@ mod tests {
             "We could've waited.",
             AvoidContractions::default(),
             "We could have waited.",
+            crate::languages::LanguageFamily::English,
         );
         assert_suggestion_result(
             "They couldn't've known.",
             AvoidContractions::default(),
             "They could not have known.",
+            crate::languages::LanguageFamily::English,
         );
         assert_suggestion_result(
             "How're you doing?",
             AvoidContractions::default(),
             "How are you doing?",
+            crate::languages::LanguageFamily::English,
         );
         assert_suggestion_result(
             "You mayn't agree.",
             AvoidContractions::default(),
             "You may not agree.",
+            crate::languages::LanguageFamily::English,
         );
         assert_suggestion_result(
             "I might've helped.",
             AvoidContractions::default(),
             "I might have helped.",
+            crate::languages::LanguageFamily::English,
         );
         assert_suggestion_result(
             "We must've missed it.",
             AvoidContractions::default(),
             "We must have missed it.",
+            crate::languages::LanguageFamily::English,
         );
         assert_suggestion_result(
             "She oughtn't leave.",
             AvoidContractions::default(),
             "She ought not leave.",
+            crate::languages::LanguageFamily::English,
         );
         assert_suggestion_result(
             "That'll work.",
             AvoidContractions::default(),
             "That will work.",
+            crate::languages::LanguageFamily::English,
         );
         assert_suggestion_result(
             "What'll happen?",
             AvoidContractions::default(),
             "What will happen?",
+            crate::languages::LanguageFamily::English,
         );
         assert_suggestion_result(
             "Who're they?",
             AvoidContractions::default(),
             "Who are they?",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -324,6 +350,7 @@ mod tests {
             "Isn't this clear?",
             AvoidContractions::default(),
             "Is not this clear?",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -333,6 +360,7 @@ mod tests {
             "WE DON'T AGREE.",
             AvoidContractions::default(),
             "WE DO NOT AGREE.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -342,17 +370,26 @@ mod tests {
             "They’re prepared.",
             AvoidContractions::default(),
             "They are prepared.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
     #[test]
     fn does_not_flag_possessives() {
-        assert_no_lints("Alice's book is here.", AvoidContractions::default());
+        assert_no_lints(
+            "Alice's book is here.",
+            AvoidContractions::default(),
+            crate::languages::LanguageFamily::English,
+        );
     }
 
     #[test]
     fn does_not_flag_names_with_apostrophes() {
-        assert_no_lints("O'Connor arrived.", AvoidContractions::default());
+        assert_no_lints(
+            "O'Connor arrived.",
+            AvoidContractions::default(),
+            crate::languages::LanguageFamily::English,
+        );
     }
 
     #[test]
@@ -360,6 +397,7 @@ mod tests {
         assert_no_lints(
             "Ain't that odd? It's done. He'd go. She's been there. Who's ready? We'd left.",
             AvoidContractions::default(),
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -368,6 +406,7 @@ mod tests {
         assert_no_lints(
             "We met y'all near the nor'easter exhibit at five o'clock.",
             AvoidContractions::default(),
+            crate::languages::LanguageFamily::English,
         );
     }
 }

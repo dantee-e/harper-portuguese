@@ -74,6 +74,7 @@ mod tests {
             "We crave for this inference code.",
             CraveFor::default(),
             "We crave this inference code.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -83,6 +84,7 @@ mod tests {
             "Ever craved for a tool to monitor what files are growing faster than other ones?",
             CraveFor::default(),
             "Ever craved a tool to monitor what files are growing faster than other ones?",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -92,6 +94,7 @@ mod tests {
             "Defending coders is the main talent everyone craves for.",
             CraveFor::default(),
             "Defending coders is the main talent everyone craves.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -103,6 +106,7 @@ mod tests {
             "but hopefully it's the avenue that leads me to what am craving for !",
             CraveFor::default(),
             "but hopefully it's the avenue that leads me to what am craving !",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -112,6 +116,7 @@ mod tests {
             "Many of my users are craving for a timepicker in dropdown format :)",
             CraveFor::default(),
             "Many of my users are craving a timepicker in dropdown format :)",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -121,6 +126,7 @@ mod tests {
             "It offers you the no-frills experience for Hugo that you might be craving for.",
             CraveFor::default(),
             "It offers you the no-frills experience for Hugo that you might be craving.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -130,6 +136,7 @@ mod tests {
             "And this is something the community has been craving for and splitting up the ecosystem",
             CraveFor::default(),
             "And this is something the community has been craving and splitting up the ecosystem",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -139,6 +146,7 @@ mod tests {
             "I'm craving for Hazel engine devlog man...",
             CraveFor::default(),
             "I'm craving Hazel engine devlog man...",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -148,6 +156,7 @@ mod tests {
             "Now everyone is craving for this level of abstraction running on GPUs.",
             CraveFor::default(),
             "Now everyone is craving this level of abstraction running on GPUs.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -157,6 +166,7 @@ mod tests {
             "Yeah, I was craving for some splinter cell action, did a playthrough of CT",
             CraveFor::default(),
             "Yeah, I was craving some splinter cell action, did a playthrough of CT",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -166,6 +176,7 @@ mod tests {
             "is this the \"freedom\" and the \"flexibility\" we were craving for compared to the Arduino folks way of doing things uC?",
             CraveFor::default(),
             "is this the \"freedom\" and the \"flexibility\" we were craving compared to the Arduino folks way of doing things uC?",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -176,6 +187,7 @@ mod tests {
         assert_no_lints(
             "The Second Noble Truth identifies three aspects of craving, one of them being craving for non-being.",
             CraveFor::default(),
+            crate::languages::LanguageFamily::English,
         );
     }
 }

@@ -6,8 +6,8 @@ pub mod lint_kind;
 pub mod portuguese;
 pub mod suggestion;
 
-pub use expr_linter::Chunk;
 pub use expr_linter::ExprLinter;
+pub use expr_linter::{Chunk, Sentence};
 pub use lint::Lint;
 pub use lint_group::FlatConfig;
 pub use lint_group::LintGroup;

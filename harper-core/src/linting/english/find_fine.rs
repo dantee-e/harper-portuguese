@@ -92,6 +92,7 @@ mod tests {
             "Generally speaking what you want to try and do is find someone to replace you before you leave.",
             FindFine::default(),
             0,
+            crate::languages::LanguageFamily::English,
         );
     }
 }

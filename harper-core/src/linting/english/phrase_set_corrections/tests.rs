@@ -36,6 +36,7 @@ fn corrects_theres_an_argument_to_be_said() {
         "I guess there s an argument to be said that if the TUCKR_HOME is already defined, it should use that instead.",
         lint_group(),
         "I guess there s an argument to be made that if the TUCKR_HOME is already defined, it should use that instead.",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -45,6 +46,7 @@ fn corrects_there_is_an_argument_to_be_said() {
         "Same argument for smooth_image_crate, although there is an argument to be said this is more-generally useful than scale_image_crate",
         lint_group(),
         "Same argument for smooth_image_crate, although there is an argument to be made this is more-generally useful than scale_image_crate",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -357,6 +359,7 @@ fn corrects_constitute_as() {
         "This doesn't really constitute as an implicit cast in the eyes of the system.",
         lint_group(),
         "This doesn't really constitute an implicit cast in the eyes of the system.",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -366,6 +369,7 @@ fn corrects_constituted_as() {
         "We do not recommend setting the number of threads to more than 20, as that can be constituted as a denial of service attack which we are not responsible for.",
         lint_group(),
         "We do not recommend setting the number of threads to more than 20, as that can be constituted a denial of service attack which we are not responsible for.",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -375,6 +379,7 @@ fn corrects_constitutes_as() {
         "Hello! I was just wondering what constitutes as a prompt in GitHub CoPilot that consumes premium request tokens.",
         lint_group(),
         "Hello! I was just wondering what constitutes a prompt in GitHub CoPilot that consumes premium request tokens.",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -384,6 +389,7 @@ fn corrects_constituting_as_example() {
         "This is the example constituting as hull-demo 's values.yaml",
         lint_group(),
         "This is the example constituting hull-demo 's values.yaml",
+        crate::languages::LanguageFamily::English,
     );
 }
 
@@ -393,9 +399,9 @@ fn ambiguous_constituting_as() {
     assert_suggestion_result(
         "Note that spinning up a Client is a non-trivial operation, constituting as much as a millisecond of overhead.",
         lint_group(),
-        // Maybe this one was supposed to be "contributing"?
         "Note that spinning up a Client is a non-trivial operation, constituting as much as a millisecond of overhead.",
-    );
+        crate::languages::LanguageFamily::English,
+    ) // Maybe this one was supposed to be "contributing"?;
 }
 
 // DefiniteArticle

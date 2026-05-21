@@ -23,13 +23,14 @@ impl Default for ForFreeOfCharge {
                         TokenKind::is_sentence_terminator,
                         TokenKind::is_comma,
                         TokenKind::is_quote,
-                    ])),
+                    ]
+                        as &[_])),
                     Box::new(SequenceExpr::whitespace().then_kind_any_but_not(
                         &[
                             TokenKind::is_conjunction,
                             TokenKind::is_preposition,
                             TokenKind::is_verb,
-                        ],
+                        ] as &[_],
                         TokenKind::is_noun,
                     )),
                 ]),
@@ -190,6 +191,7 @@ mod tests {
         assert_no_lints(
             "We prioritize interactive notebook compute for free of charge tier users.",
             ForFreeOfCharge::default(),
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -200,6 +202,7 @@ mod tests {
         assert_no_lints(
             "This is a cost for free of charge product.",
             ForFreeOfCharge::default(),
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -209,6 +212,7 @@ mod tests {
         assert_no_lints(
             "... but if you are not a student in a university I don't know where you should turn for free of charge feedback",
             ForFreeOfCharge::default(),
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -218,6 +222,7 @@ mod tests {
         assert_no_lints(
             "you see how many free places are in a particular garage, so you decide either to occupy it or search for free of charge place somewhere else",
             ForFreeOfCharge::default(),
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -226,6 +231,7 @@ mod tests {
         assert_no_lints(
             "Create reservation for free-of-charge events should not require any approval of the reservation",
             ForFreeOfCharge::default(),
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -239,6 +245,7 @@ mod tests {
         assert_no_lints(
             "I have a client who I’m working for free of charge",
             ForFreeOfCharge::default(),
+            crate::languages::LanguageFamily::English,
         );
     }
 }

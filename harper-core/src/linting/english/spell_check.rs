@@ -1,5 +1,6 @@
 use super::{Lint, LintKind, Linter, Suggestion};
 use crate::document::Document;
+use crate::linting::english::informal_laughter::is_informal_laughter;
 use crate::spell::{Dictionary, suggest_correct_spelling};
 use crate::{
     CharString, CharStringExt, DialectFlags, DialectsEnum, EnglishDialect, TokenStringExt,
@@ -1356,18 +1357,11 @@ mod tests {
         for source in ["hahah", "hahaha", "hahahah", "Hahahah", "HAHAHA"] {
             assert_no_lints(
                 source,
-                SpellCheck::new(FstDictionary::curated(), Dialect::American),
+                SpellCheck::new(
+                    FstDictionary::curated(crate::languages::LanguageFamily::English),
+                    EnglishDialect::American,
+                ),
                 crate::languages::LanguageFamily::English,
-            );
-        }
-    }
-
-    #[test]
-    fn allows_informal_laughter() {
-        for source in ["hahah", "hahaha", "hahahah", "Hahahah", "HAHAHA"] {
-            assert_no_lints(
-                source,
-                SpellCheck::new(FstDictionary::curated(), Dialect::American),
             );
         }
     }

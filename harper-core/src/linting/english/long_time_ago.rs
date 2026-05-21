@@ -67,6 +67,7 @@ mod tests {
             "Simple URL redirect handler written long time ago in PHP - yaroslav-ilin/shortener.",
             LongTimeAgo::default(),
             "Simple URL redirect handler written a long time ago in PHP - yaroslav-ilin/shortener.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -76,6 +77,7 @@ mod tests {
             "Long time ago, I wrote this code.",
             LongTimeAgo::default(),
             "A long time ago, I wrote this code.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -84,6 +86,7 @@ mod tests {
         assert_no_lints(
             "Created a long time ago and now finally saved in this gist as a backup.",
             LongTimeAgo::default(),
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -92,6 +95,7 @@ mod tests {
         assert_no_lints(
             "a long time ago i had random site redirector on my we site that would send visitors to... - sites.txt.",
             LongTimeAgo::default(),
+            crate::languages::LanguageFamily::English,
         );
     }
 }

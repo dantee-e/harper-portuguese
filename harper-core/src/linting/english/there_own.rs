@@ -72,6 +72,7 @@ mod tests {
             "Users can split data on there own topics.",
             ThereOwn::default(),
             "Users can split data on their own topics.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -81,6 +82,7 @@ mod tests {
             "Everybody has they're own preferences.",
             ThereOwn::default(),
             "Everybody has their own preferences.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -90,6 +92,7 @@ mod tests {
             "It would be helpful for people building theyre own rockets.",
             ThereOwn::default(),
             "It would be helpful for people building their own rockets.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -99,12 +102,18 @@ mod tests {
             "There own connection pool must be configured.",
             ThereOwn::default(),
             "Their own connection pool must be configured.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
     #[test]
     fn does_not_flag_correct_their_own() {
-        assert_lint_count("They manage their own servers.", ThereOwn::default(), 0);
+        assert_lint_count(
+            "They manage their own servers.",
+            ThereOwn::default(),
+            0,
+            crate::languages::LanguageFamily::English,
+        );
     }
 
     #[test]
@@ -113,17 +122,28 @@ mod tests {
             "Put the chairs over there by the window.",
             ThereOwn::default(),
             0,
+            crate::languages::LanguageFamily::English,
         );
     }
 
     #[test]
     fn does_not_flag_verb_own_after_noun() {
-        assert_lint_count("People there own nice cars.", ThereOwn::default(), 0);
+        assert_lint_count(
+            "People there own nice cars.",
+            ThereOwn::default(),
+            0,
+            crate::languages::LanguageFamily::English,
+        );
     }
 
     #[test]
     fn does_not_flag_verb_own_with_determiner() {
-        assert_lint_count("Companies there own the property.", ThereOwn::default(), 0);
+        assert_lint_count(
+            "Companies there own the property.",
+            ThereOwn::default(),
+            0,
+            crate::languages::LanguageFamily::English,
+        );
     }
 
     // Examples from issue #3276 — feature request author's positive cases.
@@ -134,6 +154,7 @@ mod tests {
             "Provide user the option in setting to customise there own default Effort lvl.",
             ThereOwn::default(),
             "Provide user the option in setting to customise their own default Effort lvl.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -143,6 +164,7 @@ mod tests {
             "Allow for modules to provide there own c files.",
             ThereOwn::default(),
             "Allow for modules to provide their own c files.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -152,6 +174,7 @@ mod tests {
             "I have a number of scripts that all create there own connection.",
             ThereOwn::default(),
             "I have a number of scripts that all create their own connection.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -161,6 +184,7 @@ mod tests {
             "allowing 3rd party appstores to silently update apps installed by theyre own.",
             ThereOwn::default(),
             "allowing 3rd party appstores to silently update apps installed by their own.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -170,6 +194,7 @@ mod tests {
             "But because they are they're own command they have their own runtime.",
             ThereOwn::default(),
             "But because they are their own command they have their own runtime.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -179,6 +204,7 @@ mod tests {
             "Components I'm working on that will eventually become they're own library.",
             ThereOwn::default(),
             "Components I'm working on that will eventually become their own library.",
+            crate::languages::LanguageFamily::English,
         );
     }
 
@@ -186,7 +212,12 @@ mod tests {
 
     #[test]
     fn issue_3276_false_positive_expensive_cars() {
-        assert_lint_count("People there own expensive cars.", ThereOwn::default(), 0);
+        assert_lint_count(
+            "People there own expensive cars.",
+            ThereOwn::default(),
+            0,
+            crate::languages::LanguageFamily::English,
+        );
     }
 
     // Sentence-initial "There own" stays a true positive (no preceding word, so
@@ -197,6 +228,7 @@ mod tests {
             "There own employees disagreed with the policy.",
             ThereOwn::default(),
             "Their own employees disagreed with the policy.",
+            crate::languages::LanguageFamily::English,
         );
     }
 }
