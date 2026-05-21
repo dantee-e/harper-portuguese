@@ -29,6 +29,7 @@ impl Default for ModalBeAdjective {
                     &[
                         "backup", // adjective commonly misused as a verb
                         "likely", // adjective but with special usage
+                        "way",    // typo for "wait" in patterns like "can't way to"
                     ] as &[_],
                 ),
         }
@@ -170,6 +171,14 @@ mod tests {
             "You should soft-fork the repository.",
             ModalBeAdjective::default(),
             crate::languages::LanguageFamily::English,
+        );
+    }
+
+    #[test]
+    fn ignore_cant_way() {
+        assert_no_lints(
+            "I can't way for something better to be released.",
+            ModalBeAdjective::default(),
         );
     }
 }

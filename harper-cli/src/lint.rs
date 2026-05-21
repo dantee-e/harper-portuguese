@@ -12,8 +12,10 @@ use rayon::prelude::*;
 use serde::Serialize;
 
 use harper_core::{
+    Dialect, DictWordMetadata, Document, Token, TokenKind,
     linting::{FlatConfig, Lint, LintGroup, LintKind},
     parsers::MarkdownOptions,
+    remove_overlaps_map,
     spell::{Dictionary, MergedDictionary, MutableDictionary},
     weirpack::Weirpack,
     {DictWordMetadata, Document, Token, TokenKind, remove_overlaps_map},

@@ -1,7 +1,10 @@
+use harper_brill::UPOS;
+
 use crate::Token;
 use crate::expr::Expr;
 use crate::expr::SequenceExpr;
 use crate::patterns::InflectionOfBe;
+use crate::patterns::UPOSSet;
 
 use crate::linting::expr_linter::Chunk;
 use crate::linting::{ExprLinter, Lint, LintKind, Suggestion};
@@ -14,7 +17,15 @@ impl Default for FindFine {
     fn default() -> Self {
         let expr = SequenceExpr::with(InflectionOfBe::default())
             .t_ws()
-            .t_aco("find");
+            .t_aco("find")
+            // Don't flag when `find` is followed by something that could be its
+            // object, e.g. "what you want to do is find someone to replace you".
+            .then_unless(SequenceExpr::whitespace().then(UPOSSet::new(&[
+                UPOS::NOUN,
+                UPOS::PROPN,
+                UPOS::PRON,
+                UPOS::DET,
+            ])));
 
         Self { expr }
     }
@@ -49,7 +60,7 @@ impl ExprLinter for FindFine {
 
 #[cfg(test)]
 mod tests {
-    use crate::linting::tests::assert_suggestion_result;
+    use crate::linting::tests::{assert_lint_count, assert_suggestion_result};
 
     use super::FindFine;
 
@@ -72,6 +83,15 @@ mod tests {
             FindFine::default(),
             "I am fine not using GPU at all for open3d.",
             crate::languages::LanguageFamily::English,
+        );
+    }
+
+    #[test]
+    fn dont_flag_is_find_someone_3255() {
+        assert_lint_count(
+            "Generally speaking what you want to try and do is find someone to replace you before you leave.",
+            FindFine::default(),
+            0,
         );
     }
 }

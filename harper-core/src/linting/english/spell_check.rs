@@ -75,6 +75,10 @@ impl<T: Dictionary> Linter for SpellCheck<T> {
         for word in document.iter_words() {
             let word_chars = document.get_span_content(&word.span);
 
+            if is_informal_laughter(word_chars) {
+                continue;
+            }
+
             if let Some(metadata) = word.kind.as_word().unwrap()
                 && metadata.dialects.is_dialect_enabled(self.dialect)
                 && (self.dictionary.contains_exact_word(word_chars)
@@ -1345,5 +1349,26 @@ mod tests {
             "children's",
             LanguageFamily::English,
         );
+    }
+
+    #[test]
+    fn allows_informal_laughter() {
+        for source in ["hahah", "hahaha", "hahahah", "Hahahah", "HAHAHA"] {
+            assert_no_lints(
+                source,
+                SpellCheck::new(FstDictionary::curated(), Dialect::American),
+                crate::languages::LanguageFamily::English,
+            );
+        }
+    }
+
+    #[test]
+    fn allows_informal_laughter() {
+        for source in ["hahah", "hahaha", "hahahah", "Hahahah", "HAHAHA"] {
+            assert_no_lints(
+                source,
+                SpellCheck::new(FstDictionary::curated(), Dialect::American),
+            );
+        }
     }
 }

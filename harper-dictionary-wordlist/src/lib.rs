@@ -1,4 +1,3 @@
-use itertools::Itertools;
 use std::path::Path;
 
 use harper_core::spell::{Dictionary, MutableDictionary};
