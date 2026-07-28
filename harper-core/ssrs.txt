@@ -1,0 +1,4 @@
+assert_suggestion_result($text, $linter, $needle,) ==>> assert_suggestion_result($text, $linter, $needle, crate::languages::LanguageFamily::English)
+
+assert_no_lints($text, $linter,) ==>> assert_no_lints($text, $linter, crate::languages::LanguageFamily::English)
+assert_lint_count($text, $linter, $count,) ==>> assert_lint_count($text, $linter, $count, crate::languages::LanguageFamily::English)
