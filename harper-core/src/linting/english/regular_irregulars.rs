@@ -14,10 +14,7 @@ pub struct RegularIrregulars<D> {
     dict: D,
 }
 
-impl<D> RegularIrregulars<D>
-where
-    D: Dictionary,
-{
+impl<D: Dictionary> RegularIrregulars<D> {
     pub fn new(dict: D) -> Self {
         Self {
             exp: Box::new(|tok: &Token, src: &[char]| {
@@ -37,10 +34,7 @@ where
     }
 }
 
-impl<D> ExprLinter for RegularIrregulars<D>
-where
-    D: Dictionary,
-{
+impl<D: Dictionary> ExprLinter for RegularIrregulars<D> {
     type Unit = Chunk;
 
     fn description(&self) -> &'static str {
@@ -358,6 +352,15 @@ mod tests {
                 RegularIrregulars::new(FstDictionary::curated(LanguageFamily::English)),
                 "I ate and drank too much but I slept good.",
                 crate::languages::LanguageFamily::English,
+            );
+        }
+
+        #[test]
+        fn fix_digged() {
+            assert_suggestion_result(
+                "I digged a bit deeper.",
+                RegularIrregulars::new(FstDictionary::curated()),
+                "I dug a bit deeper.",
             );
         }
     }

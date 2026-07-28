@@ -1,20 +1,25 @@
+<<<<<<<< HEAD:harper-core/src/linting/english/criteria_phenomena.rs
 use super::Suggestion;
+========
+use super::super::Suggestion;
+use super::super::expr_linter::ExprLinter;
+>>>>>>>> master:harper-core/src/linting/criteria_phenomena/singular_criteria_phenomena.rs
 use crate::expr::Expr;
 use crate::expr::SequenceExpr;
 use crate::linting::LintKind;
 use crate::linting::expr_linter::Chunk;
 use crate::linting::expr_linter::ExprLinter;
 use crate::patterns::WordSet;
-use crate::{Lint, Lrc, Token, TokenStringExt};
+use crate::{Lint, Lrc, Token};
 
-/// Linter that checks if 'criteria' or 'phenomena' is used as singular.
-pub struct CriteriaPhenomena {
+/// Linter that checks if `criteria` or `phenomena` is used as singular.
+pub struct SingularCriteriaPhenomena {
     expr: SequenceExpr,
     plural_words: Lrc<WordSet>,
     singular_modifiers: Lrc<WordSet>,
 }
 
-impl CriteriaPhenomena {
+impl SingularCriteriaPhenomena {
     fn new() -> Self {
         let plural_words = Lrc::new(WordSet::new(&["criteria", "phenomena"]));
 
@@ -30,7 +35,7 @@ impl CriteriaPhenomena {
     }
 }
 
-impl ExprLinter for CriteriaPhenomena {
+impl ExprLinter for SingularCriteriaPhenomena {
     type Unit = Chunk;
 
     fn expr(&self) -> &dyn Expr {
@@ -53,7 +58,7 @@ impl ExprLinter for CriteriaPhenomena {
         };
 
         Some(Lint {
-            span: matched_tokens.span()?,
+            span: matched_tokens[2].span,
             lint_kind: LintKind::Repetition,
             message: "You used a plural noun as singular.".to_owned(),
             priority: 63,
@@ -66,7 +71,7 @@ impl ExprLinter for CriteriaPhenomena {
     }
 }
 
-impl Default for CriteriaPhenomena {
+impl Default for SingularCriteriaPhenomena {
     fn default() -> Self {
         Self::new()
     }
@@ -74,26 +79,36 @@ impl Default for CriteriaPhenomena {
 
 #[cfg(test)]
 mod tests {
-    use super::CriteriaPhenomena;
-    use crate::linting::tests::assert_lint_count;
+    use super::SingularCriteriaPhenomena;
+    use crate::linting::tests::{assert_lint_count, assert_suggestion_result};
 
     #[test]
     fn can_detect_incorrect_criteria() {
-        assert_lint_count(
+        assert_suggestion_result(
             "...One criteria is essential...",
+<<<<<<<< HEAD:harper-core/src/linting/english/criteria_phenomena.rs
             CriteriaPhenomena::new(),
             1,
             crate::languages::LanguageFamily::English,
+========
+            SingularCriteriaPhenomena::default(),
+            "...One criterion is essential...",
+>>>>>>>> master:harper-core/src/linting/criteria_phenomena/singular_criteria_phenomena.rs
         )
     }
 
     #[test]
     fn can_detect_incorrect_phenomena() {
-        assert_lint_count(
+        assert_suggestion_result(
             "...I would like to see that phenomena.",
+<<<<<<<< HEAD:harper-core/src/linting/english/criteria_phenomena.rs
             CriteriaPhenomena::new(),
             1,
             crate::languages::LanguageFamily::English,
+========
+            SingularCriteriaPhenomena::default(),
+            "...I would like to see that phenomenon.",
+>>>>>>>> master:harper-core/src/linting/criteria_phenomena/singular_criteria_phenomena.rs
         )
     }
 
@@ -101,7 +116,7 @@ mod tests {
     fn allows_correct_criteria() {
         assert_lint_count(
             "...She disagrees with those criteria.",
-            CriteriaPhenomena::new(),
+            SingularCriteriaPhenomena::default(),
             0,
             crate::languages::LanguageFamily::English,
         )
@@ -111,7 +126,7 @@ mod tests {
     fn allows_correct_phenomena() {
         assert_lint_count(
             "...Many phenomena were on display.",
-            CriteriaPhenomena::new(),
+            SingularCriteriaPhenomena::default(),
             0,
             crate::languages::LanguageFamily::English,
         )

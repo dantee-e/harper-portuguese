@@ -6,12 +6,15 @@ pub mod lint_kind;
 pub mod portuguese;
 pub mod suggestion;
 
-pub use expr_linter::ExprLinter;
-pub use expr_linter::{Chunk, Sentence};
+pub use expr_linter::{Chunk, ExprLinter, Sentence};
+pub use initialism_linter::InitialismLinter;
 pub use lint::Lint;
-pub use lint_group::FlatConfig;
-pub use lint_group::LintGroup;
+pub use lint_group::{
+    FlatConfig, HumanReadableSetting, HumanReadableStructuredConfig, LintGroup, StructuredConfig,
+};
 pub use lint_kind::LintKind;
+pub use map_phrase_linter::MapPhraseLinter;
+pub use map_phrase_set_linter::MapPhraseSetLinter;
 pub use suggestion::{Suggestion, SuggestionCollectionExt};
 
 use crate::{Document, LSend, render_markdown::render_markdown};
@@ -191,6 +194,10 @@ pub mod tests {
                         "  ✅ Found good suggestion at lint[{i}].suggestions[{j}]: \"{suggestion_text}\""
                     );
                     unseen_good.remove(suggestion_text.as_str());
+                } else {
+                    eprintln!(
+                        "  ⚠️  Found unexpected suggestion at lint[{i}].suggestions[{j}]: \"{suggestion_text}\""
+                    );
                 }
             }
         }

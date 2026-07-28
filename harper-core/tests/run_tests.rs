@@ -91,6 +91,7 @@ create_test!(statist_localist.md, 0, EnglishDialect::American);
 create_test!(yogurt_british_clean.md, 0, EnglishDialect::British);
 create_test!(issue_1581.md, 0, EnglishDialect::British);
 create_test!(issue_2054.md, 6, EnglishDialect::British);
+create_test!(issue_1988.md, 0, EnglishDialect::American);
 create_test!(issue_2054_clean.md, 0, EnglishDialect::British);
 create_test!(issue_1873.md, 0, EnglishDialect::British);
 create_test!(issue_2246.md, 0, EnglishDialect::American);

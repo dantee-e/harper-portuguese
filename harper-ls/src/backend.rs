@@ -6,7 +6,6 @@ use std::sync::Arc;
 
 use crate::config::Config;
 use crate::document_state::DocumentState;
-use crate::git_commit_parser::GitCommitParser;
 use crate::ignored_lints_io::{load_ignored_lints, save_ignored_lints};
 use crate::io_utils::fileify_path;
 use anyhow::{Context, Result, anyhow};
@@ -22,6 +21,7 @@ use harper_core::parsers::{
 use harper_core::spell::{Dictionary, FstDictionary, MergedDictionary, MutableDictionary};
 use harper_core::{DialectsEnum, DictWordMetadata, Document, EnglishDialect, IgnoredLints};
 use harper_dictionary_wordlist::{load_dict, save_dict};
+use harper_git_commit::GitCommitParser;
 use harper_html::HtmlParser;
 use harper_ink::InkParser;
 use harper_jjdescription::JJDescriptionParser;
@@ -371,8 +371,8 @@ impl Backend {
                     Some(Box::new(ts_parser))
                 }
             }
-            "git-commit" | "gitcommit" | "octo" => {
-                Some(Box::new(GitCommitParser::new_markdown(markdown_options)))
+            "git-commit" | "gitcommit" | "octo" | "scminput" => {
+                Some(Box::new(GitCommitParser::default()))
             }
             "html" => Some(Box::new(HtmlParser::default())),
             "asciidoc" => Some(Box::new(AsciidocParser::default())),
